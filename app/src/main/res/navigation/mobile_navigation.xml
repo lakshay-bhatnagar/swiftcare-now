@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.swiftcare.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_medicine1Fragment"
+            app:destination="@id/medicine1Fragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_navigation_home_to_medicine2Fragment"
+            app:destination="@id/medicine2Fragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.swiftcare.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.swiftcare.ui.notifications.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_cabTransitionFragment"
+            app:destination="@id/cabTransitionFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.swiftcare.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.swiftcare.ui.booking.BookingFragment"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/medicine1Fragment"
+        android:name="com.example.swiftcare.ui.medicinedesc.Medicine1Fragment"
+        android:label="fragment_medicine1"
+        tools:layout="@layout/fragment_medicine1" >
+        <action
+            android:id="@+id/action_medicine1Fragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicine2Fragment"
+        android:name="com.example.swiftcare.ui.medicinedesc.Medicine2Fragment"
+        android:label="fragment_medicine2"
+        tools:layout="@layout/fragment_medicine2" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.swiftcare.ui.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.swiftcare.ui.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_orderProgressFragment"
+            app:destination="@id/orderProgressFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderSuccessfulFragment"
+        android:name="com.example.swiftcare.ui.payment.OrderSuccessfulFragment"
+        android:label="fragment_order_successful"
+        tools:layout="@layout/fragment_order_successful" >
+        <action
+            android:id="@+id/action_orderSuccessfulFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.swiftcare.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.example.swiftcare.ui.login.OtpVerificationFragment"
+        android:label="OtpVerificationFragment" >
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_homeTransitionFragment"
+            app:destination="@id/homeTransitionFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderProgressFragment"
+        android:name="com.example.swiftcare.transitions.OrderProgressFragment"
+        android:label="OrderProgressFragment" >
+        <action
+            android:id="@+id/action_orderProgressFragment_to_orderSuccessfulFragment"
+            app:destination="@id/orderSuccessfulFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeTransitionFragment"
+        android:name="com.example.swiftcare.transitions.HomeTransitionFragment"
+        android:label="HomeTransitionFragment" >
+        <action
+            android:id="@+id/action_homeTransitionFragment_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/cabTransitionFragment"
+        android:name="com.example.swiftcare.transitions.CabTransitionFragment"
+        android:label="CabTransitionFragment" >
+        <action
+            android:id="@+id/action_cabTransitionFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+</navigation>

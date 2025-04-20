@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/otpHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:id="@+id/otpContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- OTP Boxes -->
+        <EditText
+            android:id="@+id/otpBox1"
+            style="@style/OtpBoxStyle" />
+
+        <EditText
+            android:id="@+id/otpBox2"
+            style="@style/OtpBoxStyle" />
+
+        <EditText
+            android:id="@+id/otpBox3"
+            style="@style/OtpBoxStyle" />
+
+        <EditText
+            android:id="@+id/otpBox4"
+            style="@style/OtpBoxStyle" />
+
+        <EditText
+            android:id="@+id/otpBox5"
+            style="@style/OtpBoxStyle" />
+
+        <EditText
+            android:id="@+id/otpBox6"
+            style="@style/OtpBoxStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expires in 00:59"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textColor="@color/black"
+        app:backgroundTint="#ffd9d9" />
+
+</LinearLayout>

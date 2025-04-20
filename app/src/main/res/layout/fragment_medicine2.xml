@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.medicinedesc.Medicine1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/dolo650" />
+
+        <TextView
+            android:id="@+id/medicine2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Dolo 650mg | Paracetamol Tablets IP | 650mg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/medicine2_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:textColor="@color/black"
+            android:text="Rs. 25.70"
+            android:layout_marginStart="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"
+                android:text="15 tablets"
+                android:layout_marginStart="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_to_cart_dolo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:backgroundTint="#ffd9d9"
+                android:layout_marginEnd="20dp"
+                android:text="Add"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Dolo 650mg | Paracetamol Tablets IP | 650mg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="New Dolo 650mg Tablet Headache Relief"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="5dp"
+            android:text="New Dolo 650mg is a remedy for headaches trusted since 1934. Just one tablet of New Dolo 650mg is enough to provide relief from headaches. It is effective for different headache types of headaches spread across, on the sides and back of the head." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Key Ingredients:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="5dp"
+            android:text="Paracetamol IP 500 mg, Caffeine (anhydrous) IP 50 mg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Key Benefits:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="5dp"
+            android:text="• Unique triple-action formula for quick headache relief\n• Provides pain relief with just one tablet\n• India's No. 1 headache specialist\n• Trusted since 1934\n• Easy to carry and store in a first aid box" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Directions For Use:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="5dp"
+            android:text="1 tablet every 4- 6 hours with a minimum gap of 4 hours and not more than 6 tablets per 24 hours" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Safety Information" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="20dp"
+            android:text="• Taking more than a daily dose may cause liver damage or allergic reactions such as swelling of the face, itchy throat, rash, or difficulty in breathing.\n• Not meant for pregnant/lactating women, children, or adults undergoing treatment without a doctor's consultation.\n• Not to be consumed with other paracetamol-containing medicines or if allergic to any of the ingredients.\n• Do not use it for more than 5 days continuously. In case of excess pain, visit a physician.\n• If consuming New Dolo 650mg, limit the intake of caffeine such as coffee on that day.\n• New Dolo 650mg must not be used by children under 12 years of age.\n• Caution should be exercised when taking New Dolo 650mg for existing medical conditions like liver, kidney, asthma, chronic rhinitis, or chronic urticaria.\n• Best to consult your doctor before consuming New Dolo 650mg in the above scenario.\n• In case of use of other analgesics containing or not containing Paracetamol in addition to New Dolo 650mg, please consult your doctor before using the same." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Frequently Asked Questions:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Q. What is New Dolo 650mg Tablet used for?" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="5dp"
+            android:text="New Dolo 650mg is an effective remedy for headaches. Just one tablet of New Dolo 650mg is enough to provide relief from various types of headaches. It is effective for different headache types of headache such as a headache that spreads across, on the sides and back of the head." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="20dp"
+            android:text="Q. How long does Paracetamol take to work?" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="5dp"
+            android:text="Paracetamol takes around 30-45 minutes to start working, following which you may notice a decrease in your body temperature and relief in pain." />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

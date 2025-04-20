@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroud_color_pages"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Morning\nUser,"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="30dp" />
+
+                <ImageButton
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:src="@drawable/cart"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="54dp"
+                    android:layout_marginEnd="23.82dp"
+                    android:background="@color/white" />
+            </RelativeLayout>
+
+            <SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:elevation="30dp"
+                android:focusable="true"
+                android:iconifiedByDefault="false"
+                android:clickable="true"
+                android:searchIcon="@drawable/baseline_search_24"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#eceaea"
+                android:queryHint="Search for Medicines/Doctors/Ambulances"
+                android:background="@drawable/search_view_bg" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General use medicines"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:layout_marginTop="38dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/item1_home"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginEnd="18dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="#ffd9d9"
+                        app:strokeWidth="2dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:scaleType="fitCenter"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="12.5dp"
+                                android:src="@drawable/saridon" />
+                            <TextView
+                                android:id="@+id/price_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Saridon, ₹46.5"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_above="@id/buy_btn1"
+                                android:textSize="12sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12.5dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buy_btn1"
+                                android:layout_width="75dp"
+                                android:layout_height="40dp"
+                                app:backgroundTint="#ffd9d9"
+                                android:layout_marginStart="12.5dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="Buy"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/item2_home"
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="18dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="#ffd9d9"
+                        app:strokeWidth="2dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:scaleType="fitCenter"
+                                android:layout_marginStart="12.5dp"
+                                android:src="@drawable/dolo650" />
+                            <TextView
+                                android:id="@+id/price_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dolo650, ₹25.70"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_above="@id/buy_btn2"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12.5dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buy_btn2"
+                                android:layout_width="75dp"
+                                android:layout_height="40dp"
+                                app:backgroundTint="#ffd9d9"
+                                android:layout_marginStart="12.5dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="Buy"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginEnd="18dp"
+                        app:cardElevation="10dp"
+                        android:layout_margin="10dp"
+                        app:strokeColor="#ffd9d9"
+                        app:strokeWidth="2dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="12.5dp"
+                                android:src="@drawable/medicine_placeholder" />
+                            <TextView
+                                android:id="@+id/price_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹100.12"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_above="@id/buy_btn3"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12.5dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buy_btn3"
+                                android:layout_width="75dp"
+                                android:layout_height="40dp"
+                                app:backgroundTint="#ffd9d9"
+                                android:layout_marginStart="12.5dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="Buy"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginEnd="18dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="#ffd9d9"
+                        android:layout_margin="10dp"
+                        app:strokeWidth="2dp" >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="12.5dp"
+                                android:src="@drawable/medicine_placeholder" />
+                            <TextView
+                                android:id="@+id/price_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹100.12"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_above="@id/buy_btn4"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12.5dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buy_btn4"
+                                android:layout_width="75dp"
+                                android:layout_height="40dp"
+                                app:backgroundTint="#ffd9d9"
+                                android:layout_marginStart="12.5dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="Buy"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginEnd="18dp"
+                        app:cardElevation="10dp"
+                        android:layout_margin="10dp"
+                        app:strokeColor="#ffd9d9"
+                        app:strokeWidth="2dp" >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="12.5dp"
+                                android:src="@drawable/medicine_placeholder" />
+                            <TextView
+                                android:id="@+id/price_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹100.12"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_above="@id/buy_btn5"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12.5dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buy_btn5"
+                                android:layout_width="75dp"
+                                android:layout_height="40dp"
+                                app:backgroundTint="#ffd9d9"
+                                android:layout_marginStart="12.5dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="Buy"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="100dp"
+                        android:layout_height="140dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="#ffd9d9"
+                        app:strokeWidth="2dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="12.5dp"
+                                android:src="@drawable/medicine_placeholder" />
+                            <TextView
+                                android:id="@+id/price_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹100.12"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_above="@id/buy_btn6"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12.5dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/buy_btn6"
+                                android:layout_width="75dp"
+                                android:layout_height="40dp"
+                                app:backgroundTint="#ffd9d9"
+                                android:layout_marginStart="12.5dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:text="Buy"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginStart="30dp"
+                android:textSize="20sp"
+                android:text="Popular categories"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:textColor="@color/black" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:layout_marginBottom="100dp"
+                android:paddingEnd="30dp"
+                android:columnCount="3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="18dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="9dp"
+                    app:cardElevation="10dp"
+                    app:strokeColor="#ffd9d9"
+                    app:strokeWidth="2dp" />
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_bg"
+        android:translationY="120dp"
+        android:visibility="gone"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="45dp"/>
+</FrameLayout>

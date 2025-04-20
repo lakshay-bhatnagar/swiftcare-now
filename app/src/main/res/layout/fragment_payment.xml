@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.payment.PaymentFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Options"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="30dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_credit_card_24"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:text="Pay using Credit Card/Debit Card" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/google_pay_upi"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:text="Pay using UPI" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/cash_on_delivery"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:text="Cash on delivery" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="Bill summary"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Item total (MRP):"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/item_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Rs. 46.50"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Delivery fee:"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/deliveryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Rs. 10.50"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sf_pro_display_regular" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Total amount:"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Rs. 58.00"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/sf_pro_display_bold" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#ffd9d9"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/total_amount_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:text="Rs. 58.00"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sf_pro_display_bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buy_now"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/white"
+                app:elevation="10dp"
+                android:textColor="#ffd9d9"
+                android:text="Checkout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="7dp" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cartLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- FrameLayout to toggle between cart content and empty view -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Cart RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="12dp" />
+
+        <!-- Empty cart text centered -->
+        <TextView
+            android:id="@+id/emptyCartText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Your cart is empty."
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="16dp" />
+    </FrameLayout>
+
+    <!-- Totals and Buy Now -->
+    <TextView
+        android:id="@+id/itemTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Total: Rs. 0.00"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/deliveryFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Fee: Rs. 10.50"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: Rs. 0.00"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="4dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buy_now"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#ffd9d9"
+        app:elevation="10dp"
+        android:textColor="@color/white"
+        android:text="buy now"
+        android:layout_gravity="end|start"
+        android:layout_marginTop="7dp" />
+
+</LinearLayout>
