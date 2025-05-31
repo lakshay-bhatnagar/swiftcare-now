@@ -4,6 +4,38 @@ SwiftCare is a smart and scalable medicine delivery platform built to connect us
 
 ---
 
+## 📱 App Preview
+
+### 🏥 GET MEDICAL ASSISTANCE WITH SWIFTCARE  
+*App Opening & Login Screens*  
+![SwiftCare Opening & Login](app_screenshots/1.jpg)
+
+---
+
+### 🔐 SWIFTCARE OFFERS FAST AND SECURE MEDICAL ASSISTANCE  
+*Login & OTP Verification Screens*  
+![SwiftCare Login & OTP](app_screenshots/2.jpg)
+
+---
+
+### 💊 WITH SWIFTCARE ORDER YOUR DAILY NEED MEDICINE AT SUPER-LOW COST  
+*Medicine Description & Cart Screens*  
+![Medicine & Cart](app_screenshots/3.jpg)
+
+---
+
+### ⚡ SWIFTCARE MULTIPLE PHARMACY MODEL DELIVERS WITHIN 15-20 MINS  
+*Multiple Pharmacy Dialog & Payment Options*  
+![Multi Pharmacy & Payment](app_screenshots/4.jpg)
+
+---
+
+### 📦 PLACE ORDER AND GET MEDICINES DELIVERED SWIFTLY  
+*Order Transition & Order Placed Screens*  
+![Order Transition & Placed](app_screenshots/5.jpg)
+
+---
+
 ## ✨ Features
 
 - 🛒 **Smart Cart System** – Add multiple medicines, and we'll automatically detect if they come from different pharmacies.
@@ -14,6 +46,7 @@ SwiftCare is a smart and scalable medicine delivery platform built to connect us
 - 👨‍⚕️ **Online Doctor Consultations** *(coming soon)*
 
 ---
+
 ## 🧠 How It Works
 
 1. User adds medicines to the cart.
@@ -26,3 +59,6 @@ SwiftCare is a smart and scalable medicine delivery platform built to connect us
 6. In case of emergency:
    - 🛑 **Uncancellable Emergency Cab** – The user can instantly book a dedicated emergency cab to the nearest hospital. Once booked, it cannot be canceled to ensure urgency is prioritized.
    - 🚑 **One-Tap Ambulance** – The user can book an ambulance to their live location with a single tap, enabled by GPS and nearby partner integration.
+
+---
+
